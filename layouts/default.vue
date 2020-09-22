@@ -9,9 +9,13 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
 body {
   background-color: #1e1e22;
   color: #ffffff;
+  font-family: 'Baloo Tammudu 2', cursive;
+  line-height: 1.5;
 }
 
 .ml-45 {

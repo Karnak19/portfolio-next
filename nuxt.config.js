@@ -1,10 +1,15 @@
+console.log(process.env.NODE_ENV)
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: '🏅 Basile V.',
+    title:
+      process.env.NODE_ENV === 'production'
+        ? '🏅 Basile V.'
+        : '[DEV] 🏅 Basile V.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
