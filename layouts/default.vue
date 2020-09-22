@@ -9,8 +9,6 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
-
 body {
   background-color: #1e1e22;
   color: #ffffff;

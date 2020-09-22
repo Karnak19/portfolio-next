@@ -16,7 +16,14 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'robots', content: 'noindex' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/portrait.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/portrait.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap',
+      },
+    ],
     bodyAttrs: {
       'vs-theme': 'dark',
     },
