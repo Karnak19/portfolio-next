@@ -4,7 +4,8 @@ WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
 RUN npm install
-RUN npm run deploy
+RUN npm run build
+RUN npm run generate
 
 # production environment
 FROM nginx:1.13.9-alpine
