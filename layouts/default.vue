@@ -1,7 +1,7 @@
 <template>
   <div>
     <Sidebar />
-    <div class="content ml-45">
+    <div class="content-scoped ml-45">
       <Nuxt />
     </div>
     <Footer />
@@ -20,12 +20,12 @@ body {
   margin-left: 45px;
 }
 
-.content {
+.content-scoped {
   min-height: 92vh;
 }
 
 @media screen and (max-width: 768px) {
-  .content {
+  .content-scoped {
     min-height: 88vh;
   }
 }
