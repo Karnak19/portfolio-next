@@ -1,7 +1,7 @@
 <template>
   <div>
     <Sidebar />
-    <div class="content ml-45">
+    <div class="content-scoped ml-45">
       <Nuxt />
     </div>
     <Footer />
@@ -9,8 +9,6 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
-
 body {
   background-color: #1e1e22;
   color: #ffffff;
@@ -22,12 +20,12 @@ body {
   margin-left: 45px;
 }
 
-.content {
+.content-scoped {
   min-height: 92vh;
 }
 
 @media screen and (max-width: 768px) {
-  .content {
+  .content-scoped {
     min-height: 88vh;
   }
 }
