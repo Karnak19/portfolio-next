@@ -3,7 +3,6 @@
     <vs-sidebar v-model="active" absolute reduce open hover-expand>
       <template #logo>
         <!-- ...img logo -->
-        {{ activePage }}
       </template>
       <vs-sidebar-item
         v-for="page in pages"
@@ -24,7 +23,7 @@
 export default {
   data() {
     return {
-      active: false, // TODO: Find a way to update when using buttons on index page
+      active: this.$route.name,
       pages: [
         {
           id: 'index',
@@ -47,9 +46,10 @@ export default {
       ],
     }
   },
-
-  mounted() {
-    this.active = this.$route.name
+  watch: {
+    $route(value) {
+      this.active = value.name
+    },
   },
 }
 </script>
