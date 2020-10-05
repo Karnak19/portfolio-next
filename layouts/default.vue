@@ -8,9 +8,19 @@
   </div>
 </template>
 
+<script>
+// import Fragment from 'vue-fragment'
+
+export default {
+  components: {
+    // Fragment,
+  },
+}
+</script>
+
 <style>
 body {
-  background-color: #1e1e22;
+  background-color: #1e2023;
   color: #ffffff;
   font-family: 'Baloo Tammudu 2', cursive;
   line-height: 1.5;
