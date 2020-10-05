@@ -19,10 +19,10 @@
           <p>{{ card.desc }}</p>
         </template>
         <template #interactions>
-          <vs-button icon shadow>
+          <vs-button icon shadow :href="card.repo" blank>
             <i class="bx bxl-github"></i>
           </vs-button>
-          <vs-button danger icon>
+          <vs-button danger icon :to="card.route">
             <i class="bx bx-arrow-to-right"></i>
           </vs-button>
         </template>
@@ -41,6 +41,8 @@ export default {
           title: 'React Starter',
           desc: 'This is a React template with CLI, to boostrap projects',
           img: 'https://vuesax.com/foto13.png',
+          repo: 'https://github.com/Karnak19/react-starter-wcs',
+          route: '/portfolio/react-starter',
         },
         {
           id: 2,
@@ -49,6 +51,8 @@ export default {
             'https://raw.githubusercontent.com/Karnak19/kissBot/master/avatar.png',
           desc:
             'Discord bot, used to simplify our gaming team everyday workflow (event creation, team setup, strategies files, etc.)',
+          repo: 'https://github.com/Karnak19/kissbot',
+          route: '/portfolio/kissbot',
         },
         {
           id: 3,
@@ -56,6 +60,8 @@ export default {
           desc:
             'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad recusandae optio nam odit officiis consequatur, cumque magnam veniam exercitationem sapiente.',
           img: 'https://vuesax.com/foto13.png',
+          repo: 'https://github.com/Karnak19/kissbot',
+          route: '/portfolio/title',
         },
       ],
     }
