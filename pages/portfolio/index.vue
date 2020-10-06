@@ -40,7 +40,7 @@ export default {
           id: 1,
           title: 'React Starter',
           desc: 'This is a React template with CLI, to boostrap projects',
-          img: 'https://vuesax.com/foto13.png',
+          img: 'https://i.imgur.com/8MwoGki.png',
           repo: 'https://github.com/Karnak19/react-starter-wcs',
           route: '/portfolio/react-starter',
         },
