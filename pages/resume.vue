@@ -3,13 +3,7 @@
     <ResumeHeader />
     <hr />
     <vs-row>
-      <vs-col w="8" class="main">
-        <section>hello</section>
-        <hr />
-        <section>world</section>
-        <hr />
-        <section>youpi</section></vs-col
-      >
+      <ResumeMain />
       <ResumeSide />
     </vs-row>
   </div>
@@ -17,10 +11,12 @@
 
 <script>
 import ResumeSide from '@/components/ResumeSide'
+import ResumeMain from '@/components/ResumeMain'
 import ResumeHeader from '@/components/ResumeHeader'
 export default {
   components: {
     ResumeSide,
+    ResumeMain,
     ResumeHeader,
   },
 }
@@ -33,18 +29,23 @@ export default {
   padding-left: 0px;
 }
 
-.page li {
-  list-style: none;
+.page h3 {
+  margin: 0;
 }
 
-.page .main {
-  padding-right: 30px;
+.page p {
+  margin: 0;
+}
+
+.page li {
+  list-style: none;
+  padding: 3px 0;
 }
 
 @media screen and (max-width: 900px) {
   .page {
-    margin: 30px;
-    padding: 20px;
+    margin: 20px;
+    padding: 15px;
   }
 }
 

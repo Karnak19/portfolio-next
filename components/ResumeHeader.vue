@@ -5,11 +5,11 @@
         <vs-col w="2" style="display: flex" class="xs-none">
           <img src="portrait.webp" alt="Basile Vernouillet portrait" />
         </vs-col>
-        <vs-col w="6">
+        <vs-col w="6" xs="12">
           <h1>BASILE VERNOUILLET</h1>
           <h2>Javascript developer / trainer</h2>
         </vs-col>
-        <vs-col w="4">
+        <vs-col w="4" xs="12">
           <ul>
             <li class="clipboard" @click="copyToClipboard('Karnak19')">
               <i class="bx bxl-github"></i>

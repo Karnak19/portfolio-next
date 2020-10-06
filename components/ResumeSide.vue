@@ -1,5 +1,5 @@
 <template>
-  <vs-col w="4" class="side">
+  <vs-col w="4" xs="12" class="side">
     <section v-for="(item, i) in items" :key="i">
       <h3>{{ item.title }}</h3>
       <ul>
