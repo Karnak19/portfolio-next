@@ -1,27 +1,9 @@
 <template>
   <vs-col w="4" class="side">
-    <section>
-      <h3>Stack</h3>
+    <section v-for="(item, i) in items" :key="i">
+      <h3>{{ item.title }}</h3>
       <ul>
-        <li v-for="(stack, i) in stacks" :key="i">{{ stack }}</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Educ</h3>
-      <ul>
-        <li v-for="(educ, i) in educs" :key="i">{{ educ }}</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Languages</h3>
-      <ul>
-        <li v-for="(lang, i) in langs" :key="i">{{ lang }}</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Hobbies</h3>
-      <ul>
-        <li v-for="(hobby, i) in hobbies" :key="i">{{ hobby }}</li>
+        <li v-for="(el, j) in item.list" :key="j">{{ el }}</li>
       </ul>
     </section>
   </vs-col>
@@ -31,27 +13,38 @@
 export default {
   data() {
     return {
-      stacks: [
-        'git',
-        'Ubuntu',
-        'React/Redux',
-        'VueJS',
-        'NodeJS/Express',
-        'Deno',
-        'GraphQL',
-        'API-Platform',
-        'MySQL, Postgres',
-        'Mocha/Chai/Jest',
-        'Docker',
-      ],
-      langs: ['French (native)', 'English (technical)', 'Javascript'],
-      educs: ['BTS SIO', 'BAC STG'],
-      hobbies: [
-        'Javascript',
-        'Video Games',
-        'Bodyboard',
-        'Internet culture (gif, memes)',
-        'Cats',
+      items: [
+        {
+          title: 'Stack',
+          list: [
+            'git',
+            'Ubuntu',
+            'React/Redux',
+            'VueJS',
+            'NodeJS/Express',
+            'Deno',
+            'GraphQL',
+            'API-Platform',
+            'MySQL, Postgres',
+            'Mocha/Chai/Jest',
+            'Docker',
+          ],
+        },
+        {
+          title: 'Languages',
+          list: ['French (native)', 'English (technical)', 'Javascript'],
+        },
+        { title: 'Education', list: ['BTS SIO', 'BAC STG'] },
+        {
+          title: 'Hobbies',
+          list: [
+            'Javascript',
+            'Video Games',
+            'Bodyboard',
+            'Internet culture (gif, memes)',
+            'Cats',
+          ],
+        },
       ],
     }
   },
