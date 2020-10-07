@@ -13,6 +13,7 @@
 import ResumeSide from '@/components/ResumeSide'
 import ResumeMain from '@/components/ResumeMain'
 import ResumeHeader from '@/components/ResumeHeader'
+
 export default {
   components: {
     ResumeSide,

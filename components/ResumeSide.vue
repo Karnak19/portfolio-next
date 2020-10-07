@@ -24,7 +24,7 @@ export default {
             'NodeJS/Express',
             'Deno',
             'GraphQL',
-            'API-Platform',
+            'API-Platform (Symfony)',
             'MySQL, Postgres',
             'Mocha/Chai/Jest',
             'Docker',
