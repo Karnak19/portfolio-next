@@ -18,6 +18,7 @@
       </vs-col>
     </vs-row>
     <hr />
+    <p style="font-weight: 900; font-size: 40px">WORK IN PROGRESS</p>
   </vs-col>
 </template>
 
@@ -37,9 +38,7 @@ export default {
               - 1 fullstack with real client (React + NodeJS/Express/MySQL + integration tests with Jest/Supertest or Mocha/Chai)
           So I am much more a lead dev than a school teacher.
 
-          In a nutshell: 65+ students trained, 100+ motivation/technical interviews, 15+ projects drived/led
-        
-          `,
+          In a nutshell: 65+ students trained, 100+ motivation/technical interviews, 15+ projects drived/led`,
         },
         {
           job: 'Fullstack developer',
