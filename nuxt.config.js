@@ -40,12 +40,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    'nuxt-compress',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-compress',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
