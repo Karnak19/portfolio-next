@@ -17,7 +17,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/portrait.ico' },
       {
-        rel: 'stylesheet',
+        rel: ['preload', 'stylesheet'],
+        as: 'style',
         href:
           'https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap',
       },
