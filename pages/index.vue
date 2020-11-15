@@ -2,6 +2,7 @@
   <Fragment>
     <IndexIntro />
     <hr />
+    <IndexMain />
   </Fragment>
 </template>
 

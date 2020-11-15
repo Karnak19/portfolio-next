@@ -1,7 +1,5 @@
 <template>
-  <vs-row>
-    <WipAlert />
-  </vs-row>
+  <div>hello world</div>
 </template>
 
 <script>
