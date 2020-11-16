@@ -17,7 +17,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/portrait.ico' },
       {
-        rel: 'stylesheet',
+        rel: ['preload', 'stylesheet'],
+        as: 'style',
         href:
           'https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap',
       },
@@ -40,12 +41,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    'nuxt-compress',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-compress',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -56,5 +59,13 @@ export default {
   server: {
     port: 8000,
     // host: '0.0.0.0',
+  },
+  'nuxt-compress': {
+    gzip: {
+      cache: true,
+    },
+    brotli: {
+      threshold: 10240,
+    },
   },
 }
